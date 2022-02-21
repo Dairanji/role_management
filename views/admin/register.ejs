@@ -1,0 +1,68 @@
+<%- include("partial/header") %> <%- include("partial/nav") %>
+
+<div class="container">
+  <h2>Admin Registration</h2>
+
+  <form action="admin-register" method="post">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Admin Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            placeholder="Enter Admin Name"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="confirmPassword"
+            placeholder="Enter Confirm Password"
+            required
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-outline-primary btn-lg btn-block">
+          Register
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<%- include("partial/footer") %>
